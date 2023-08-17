@@ -24,314 +24,346 @@
     <meta content="5" data-name="image-counter" />
     <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   </head>
-  <body></body>
-  <!--[if lt IE 9]>
-    <p class="browserupgrade"></p>
-    Estás usando un navegador
-    <strong>desactualizado.</strong>
-    Por favor
-    <a href="http://browsehappy.com/"></a>
-    actualiza tu navegador para una mejor experiencia
-  <![endif]-->
-  <div class="video-container">
-    <video
-      autoplay
-      height="720"
-      loop
-      poster="/videos/images/coffee.jpg"
-      width="1280"
-    >
-      <source src="/videos/mp4/coffe.mp4" typ="video/mp4" />
-      <source src="/videos/webm/coffe.webm" typ="video/webm" />
-    </video>
-  </div>
-  <div class="row full-height middle-xs center-xs relative up" id="home">
-    <div class="col-xs-12">
-      <div class="box">
-        <img src="images/logo.png" width="200" />
-        <h1 class="text-white dancing-script title m-0">El Rincón del café</h1>
-        <p class="text-white" id="is-open">
-          <svg
-            class="bi bi-clock"
-            fill="currentColor"
-            height="16"
-            viewBox="0 0 16 16"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
+  <body>
+    <!--[if lt IE 9]>
+      <p class="browserupgrade"></p>
+      Estás usando un navegador
+      <strong>desactualizado.</strong>
+      Por favor
+      <a href="http://browsehappy.com/"></a>
+      actualiza tu navegador para una mejor experiencia
+    <![endif]-->
+    <div class="video-container">
+      <video
+        autoplay
+        height="720"
+        loop
+        poster="/videos/images/coffee.jpg"
+        width="1280"
+      >
+        <source src="/videos/mp4/coffe.mp4" typ="video/mp4" />
+        <source src="/videos/webm/coffe.webm" typ="video/webm" />
+      </video>
+    </div>
+    <div class="row full-height middle-xs center-xs relative up" id="home">
+      <div class="col-xs-12">
+        <div class="box">
+          <img src="images/logo.png" width="200" />
+          <h1 class="text-white dancing-script title m-0">
+            El Rincón del café
+          </h1>
+          <p class="text-white" id="is-open">
+            <svg
+              class="bi bi-clock"
+              fill="currentColor"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+              ></path>
+              <path
+                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"
+              ></path>
+            </svg>
+            Abierto Ahora
+          </p>
+        </div>
+      </div>
+      <nav class="fixed text-white top right navigation" id="navigation">
+        <ul class="list-inline">
+          <li>
+            <a>Inicio</a>
+          </li>
+          <li>
+            <a>Menú</a>
+          </li>
+          <li>
+            <a>Galería</a>
+          </li>
+          <li>
+            <a>Contacto</a>
+          </li>
+          <li>
+            <a>Como llegar</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="absolute bg-black large-padding text-white w-full"
+        id="description"
+      >
+        <div class="row middle-xs center-xs">
+          <div class="col-xs-7 col-sm-6 text-white text-2xl">
+            ¡Descubre un mundo de sabores! Te esperamos en nuestra cafetería.
+          </div>
+          <div class="col-xs" id="sticky-navigation">
+            <div class="box">
+              <nav class="text-right navigation">
+                <ul class="list-inline">
+                  <li>
+                    <a>Inicio</a>
+                  </li>
+                  <li>
+                    <a>Menú</a>
+                  </li>
+                  <li>
+                    <a>Galería</a>
+                  </li>
+                  <li>
+                    <a>Contacto</a>
+                  </li>
+                  <li>
+                    <a>Como llegar</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center relative" id="menu">
+      <div class="absolute bg-white" id="menu-title">
+        <h2 class="dancing-script title">Menú</h2>
+      </div>
+      <div class="row">
+        <div
+          class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+          style="background-image: url(/images/drinks/americano.png)"
+        >
+          <div class="screen">
+            <div class="row middle-xs full-height">
+              <div class="col-xs-12">
+                <h3 class="dancing-script text-white subtitle">Americano</h3>
+                <p class="m-0 text-white">10.00USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+          style="background-image: url(/images/drinks/bagel_cream_cheeese.png)"
+        >
+          <div class="screen">
+            <div class="row middle-xs full-height">
+              <div class="col-xs-12">
+                <h3 class="dancing-script text-white subtitle">
+                  Bagel Cream Cheese
+                </h3>
+                <p class="m-0 text-white">20.00USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+          style="background-image: url(/images/drinks/bluberry_muffin.png)"
+        >
+          <div class="screen">
+            <div class="row middle-xs full-height">
+              <div class="col-xs-12">
+                <h3 class="dancing-script text-white subtitle">
+                  Bluberry Muffin
+                </h3>
+                <p class="m-0 text-white">15.00USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+          style="background-image: url(/images/drinks/cappuccino.png)"
+        >
+          <div class="screen">
+            <div class="row middle-xs full-height">
+              <div class="col-xs-12">
+                <h3 class="dancing-script text-white subtitle">Cappuccino</h3>
+                <p class="m-0 text-white">12.00USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+          style="background-image: url(/images/drinks/caramel_espresso.png)"
+        >
+          <div class="screen">
+            <div class="row middle-xs full-height">
+              <div class="col-xs-12">
+                <h3 class="dancing-script text-white subtitle">
+                  Caramel espresso
+                </h3>
+                <p class="m-0 text-white">30.00USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+          style="background-image: url(/images/drinks/grilled_cheese.png)"
+        >
+          <div class="screen">
+            <div class="row middle-xs full-height">
+              <div class="col-xs-12">
+                <h3 class="dancing-script text-white subtitle">
+                  Grilled Cheese
+                </h3>
+                <p class="m-0 text-white">30.00USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+          style="background-image: url(/images/drinks/kids_cookies.png)"
+        >
+          <div class="screen">
+            <div class="row middle-xs full-height">
+              <div class="col-xs-12">
+                <h3 class="dancing-script text-white subtitle">Kids Cookies</h3>
+                <p class="m-0 text-white">18.00USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
+          style="background-image: url(/images/drinks/lumberjack.png)"
+        >
+          <div class="screen">
+            <div class="row middle-xs full-height">
+              <div class="col-xs-12">
+                <h3 class="dancing-script text-white subtitle">Lumberjack</h3>
+                <p class="m-0 text-white">40.00USD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="gallery">
+      <div class="inner">
+        <div
+          class="image"
+          style="background-image: url(/images/drinks/coffee_1.jpg)"
+        ></div>
+        <div
+          class="image"
+          style="background-image: url(/images/drinks/coffee_2.jpg)"
+        ></div>
+        <div
+          class="image"
+          style="background-image: url(/images/drinks/coffee_3.jpg)"
+        ></div>
+        <div
+          class="image"
+          style="background-image: url(/images/drinks/coffee_4.jpg)"
+        ></div>
+        <div
+          class="image"
+          style="background-image: url(/images/drinks/coffee_5.jpg)"
+        ></div>
+        <div
+          class="image"
+          style="background-image: url(/images/drinks/coffee_6.jpg)"
+        ></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card bg-white text-black text-center relative">
+        <h3 class="text-2xl font-extralight">
+          En
+          <strong class="dancing-script text-2xl">El Rincón del Café</strong>
+          disfrutaras de momentos llenos de aromas y delicias en un ambiente
+          perfecto para
+          <strong class="dancing-script text-2xl"
+            >relajarte y compartir.</strong
           >
-            <path
-              d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-            ></path>
-            <path
-              d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"
-            ></path>
-          </svg>
-          Abierto Ahora
+        </h3>
+        <p class="mt-2">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+          magnam hic at! Veniam, aut aliquid officia atque, ratione ab facilis
+          quo neque minus adipisci voluptates saepe accusamus ipsum, error
+          recusandae. Veniam, aut aliquid officia atque, ratione ab facilis quo
+          neque minus minusminus minu adipisci voluptates saepe accusamus ipsum,
+          error recusandae.
+          <strong class="dancing-script text-2xl">Chef -AVS</strong>
         </p>
       </div>
     </div>
-    <nav class="fixed text-white top right navigation" id="navigation">
-      <ul class="list-inline">
-        <li>
-          <a>Inicio</a>
-        </li>
-        <li>
-          <a>Menú</a>
-        </li>
-        <li>
-          <a>Galería</a>
-        </li>
-        <li>
-          <a>Contacto</a>
-        </li>
-        <li>
-          <a>Como llegar</a>
-        </li>
-      </ul>
-    </nav>
-    <div
-      class="absolute bg-black large-padding text-white w-full"
-      id="description"
-    >
-      <div class="row middle-xs center-xs">
-        <div class="col-xs-7 col-sm-6 text-white text-2xl">
-          ¡Descubre un mundo de sabores! Te esperamos en nuestra cafetería.
-        </div>
-        <div class="col-xs" id="sticky-navigation">
+    <div class="bg-black text-white full-height" id="contact">
+      <div class="row middle-xs full-height">
+        <div class="col-xs-12">
           <div class="box">
-            <nav class="text-right navigation">
-              <ul class="list-inline">
-                <li>
-                  <a>Inicio</a>
-                </li>
-                <li>
-                  <a>Menú</a>
-                </li>
-                <li>
-                  <a>Galería</a>
-                </li>
-                <li>
-                  <a>Contacto</a>
-                </li>
-                <li>
-                  <a>Como llegar</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="text-center relative" id="menu">
-    <div class="absolute bg-white" id="menu-title">
-      <h2 class="dancing-script title">Menú</h2>
-    </div>
-    <div class="row">
-      <div
-        class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
-        style="background-image: url(/images/drinks/americano.png)"
-      >
-        <div class="screen">
-          <div class="row middle-xs full-height">
-            <div class="col-xs-12">
-              <h3 class="dancing-script text-white subtitle">Americano</h3>
-              <p class="m-0 text-white">10.00USD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
-        style="background-image: url(/images/drinks/bagel_cream_cheeese.png)"
-      >
-        <div class="screen">
-          <div class="row middle-xs full-height">
-            <div class="col-xs-12">
-              <h3 class="dancing-script text-white subtitle">
-                Bagel Cream Cheese
-              </h3>
-              <p class="m-0 text-white">20.00USD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
-        style="background-image: url(/images/drinks/bluberry_muffin.png)"
-      >
-        <div class="screen">
-          <div class="row middle-xs full-height">
-            <div class="col-xs-12">
-              <h3 class="dancing-script text-white subtitle">
-                Bluberry Muffin
-              </h3>
-              <p class="m-0 text-white">15.00USD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
-        style="background-image: url(/images/drinks/cappuccino.png)"
-      >
-        <div class="screen">
-          <div class="row middle-xs full-height">
-            <div class="col-xs-12">
-              <h3 class="dancing-script text-white subtitle">Cappuccino</h3>
-              <p class="m-0 text-white">12.00USD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
-        style="background-image: url(/images/drinks/caramel_espresso.png)"
-      >
-        <div class="screen">
-          <div class="row middle-xs full-height">
-            <div class="col-xs-12">
-              <h3 class="dancing-script text-white subtitle">
-                Caramel espresso
-              </h3>
-              <p class="m-0 text-white">30.00USD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
-        style="background-image: url(/images/drinks/grilled_cheese.png)"
-      >
-        <div class="screen">
-          <div class="row middle-xs full-height">
-            <div class="col-xs-12">
-              <h3 class="dancing-script text-white subtitle">Grilled Cheese</h3>
-              <p class="m-0 text-white">30.00USD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
-        style="background-image: url(/images/drinks/kids_cookies.png)"
-      >
-        <div class="screen">
-          <div class="row middle-xs full-height">
-            <div class="col-xs-12">
-              <h3 class="dancing-script text-white subtitle">Kids Cookies</h3>
-              <p class="m-0 text-white">18.00USD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-md-4 col-lg-3 col-sm-6 col-xs-12 food"
-        style="background-image: url(/images/drinks/lumberjack.png)"
-      >
-        <div class="screen">
-          <div class="row middle-xs full-height">
-            <div class="col-xs-12">
-              <h3 class="dancing-script text-white subtitle">Lumberjack</h3>
-              <p class="m-0 text-white">40.00USD</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="gallery">
-    <div class="inner">
-      <div
-        class="image"
-        style="background-image: url(/images/drinks/coffee_1.jpg)"
-      ></div>
-      <div
-        class="image"
-        style="background-image: url(/images/drinks/coffee_2.jpg)"
-      ></div>
-      <div
-        class="image"
-        style="background-image: url(/images/drinks/coffee_3.jpg)"
-      ></div>
-      <div
-        class="image"
-        style="background-image: url(/images/drinks/coffee_4.jpg)"
-      ></div>
-      <div
-        class="image"
-        style="background-image: url(/images/drinks/coffee_5.jpg)"
-      ></div>
-      <div
-        class="image"
-        style="background-image: url(/images/drinks/coffee_6.jpg)"
-      ></div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="card bg-white text-black text-center relative">
-      <h3 class="text-2xl font-extralight">
-        En
-        <strong class="dancing-script text-2xl">El Rincón del Café</strong>
-        disfrutaras de momentos llenos de aromas y delicias en un ambiente
-        perfecto para
-        <strong class="dancing-script text-2xl">relajarte y compartir.</strong>
-      </h3>
-      <p class="mt-2">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum magnam
-        hic at! Veniam, aut aliquid officia atque, ratione ab facilis quo neque
-        minus adipisci voluptates saepe accusamus ipsum, error recusandae.
-        Veniam, aut aliquid officia atque, ratione ab facilis quo neque minus
-        minusminus minu adipisci voluptates saepe accusamus ipsum, error
-        recusandae.
-        <strong class="dancing-script text-2xl">Chef -AVS</strong>
-      </p>
-    </div>
-  </div>
-  <div class="bg-black text-white full-height" id="contact">
-    <div class="row middle-xs full-height">
-      <div class="col-xs-12">
-        <div class="box">
-          <form action="https://formspree.io/f/mzbleyvg" method="POST">
-            <div class="row center-xs">
-              <div class="col-xs-2 col-md-1">
-                <div class="box"></div>
-              </div>
-              <div class="col-xs-5">
-                <div class="box">
-                  <input
-                    name="email"
-                    placeholder="Escribe tu correo electronico"
-                    type="email"
-                  />
-                  <input
-                    name="name"
-                    placeholder="Escribe tu nombre"
-                    type="text"
-                  />
-                  <textarea
-                    name="body"
-                    placeholder="Escribe tu mensaje..."
-                  ></textarea>
-                  <div>
-                    <button class="btn btn-primary" type="submit">
-                      Enviar
-                    </button>
+            <p class="text-center text-white text-2xl" id="info-contacto">
+              Ponte en contacto con nosotros llena los campos correspodientes y
+              envianos un correo
+            </p>
+            <form
+              action="https://formspree.io/f/mzbleyvg"
+              class="step-form"
+              id="form-contact"
+              method="POST"
+            >
+              <div class="row center-xs">
+                <div class="col-xs-2 col-md-1">
+                  <div class="box text-right text-center">
+                    <div class="path-step active"></div>
+                    <br />
+                    <div class="path-step"></div>
+                    <br />
+                    <div class="path-step"></div>
+                    <br />
+                  </div>
+                </div>
+                <div class="col-xs-5">
+                  <div class="box">
+                    <fieldset class="step active">
+                      <input
+                        class="input"
+                        name="email"
+                        placeholder="Escribe tu correo electronico"
+                        required
+                        type="email"
+                      />
+                    </fieldset>
+                    <fieldset class="step">
+                      <input
+                        class="input"
+                        name="name"
+                        placeholder="Escribe tu nombre"
+                        required
+                        type="text"
+                      />
+                    </fieldset>
+                    <fieldset class="step">
+                      <textarea
+                        class="input"
+                        name="body"
+                        placeholder="Escribe tu mensaje..."
+                        required
+                      ></textarea>
+                    </fieldset>
+                    <p id="form-status"></p>
                   </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script
-    crossorigin="anonymous"
-    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
-    src="https://code.jquery.com/jquery-3.7.0.js"
-  >
-    window.jQuery || document.write("<script src='js\vendor\jquery-3.7.0.min.js'><\/script>")
-  </script>
-  <script src="js/main.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      src="https://code.jquery.com/jquery-3.7.0.js"
+    >
+      window.jQuery || document.write("<script src='js\vendor\jquery-3.7.0.min.js'><\/script>")
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/step.js"></script>
+  </body>
 </html>

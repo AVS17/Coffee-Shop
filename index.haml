@@ -16,106 +16,112 @@
         %meta{:"data-name" => "image-counter", content:"#{gallery_images.size-1}"}
         %script{src:"js/vendor/modernizr-3.12.0.min.js"}
     %body
-    ="<!--[if lt IE 9]>"
-    %p{class:"browserupgrade"}
-    Estás usando un navegador
-    %strong desactualizado.
-    Por favor
-    %a{href:"http://browsehappy.com/"}
-    actualiza tu navegador
-    para una mejor experiencia
-    ="<![endif]-->"
-    .video-container
-        %video{autoplay:true, loop:true,width:"1280",height:"720",poster:"/videos/images/coffee.jpg"} 
-            %source{src:"/videos/mp4/coffe.mp4",typ:"video/mp4"}
-            %source{src:"/videos/webm/coffe.webm",typ:"video/webm"}
-    .row.full-height.middle-xs.center-xs.relative.up#home
-        .col-xs-12
-            .box 
-                %img{src:"images/logo.png", width:200}
-                %h1.text-white.dancing-script.title.m-0 El Rincón del café
-                %p#is-open.text-white
-                    %svg{xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", fill: "currentColor", class: "bi bi-clock", viewBox: "0 0 16 16"}
-                        %path{d: "M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"}
-                        %path{d: "M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"}
-                    Abierto Ahora
-        %nav.fixed#navigation.text-white.top.right.navigation
-            -menu = ["Inicio","Menú","Galería","Contacto","Como llegar"]
-            %ul.list-inline
-                -menu.each do |item|
-                    %li 
-                        %a{}=item
-        .absolute#description.bg-black.large-padding.text-white.w-full
-            .row.middle-xs.center-xs
-                .col-xs-7.col-sm-6.text-white.text-2xl
-                    ¡Descubre un mundo de sabores! Te esperamos en nuestra cafetería.
-                .col-xs#sticky-navigation
-                    .box 
-                        %nav.text-right.navigation
-                            %ul.list-inline
-                                -menu.each do |item|
-                                    %li 
-                                        %a{}=item
-    .text-center.relative#menu
-        .absolute.bg-white#menu-title 
-            %h2.dancing-script.title Menú
-        -menu_photos = [{name: "Americano", pricing: "10.00", image: "americano"},
-            {name: "Bagel Cream Cheese", pricing: "20.00", image: "bagel_cream_cheeese"},
-            {name: "Bluberry Muffin", pricing: "15.00", image: "bluberry_muffin"},
-            {name: "Cappuccino", pricing: "12.00", image: "cappuccino"},
-            {name: "Caramel espresso", pricing: "30.00", image: "caramel_espresso"},
-            {name: "Grilled Cheese", pricing: "30.00", image: "grilled_cheese"},
-            {name: "Kids Cookies", pricing: "18.00", image: "kids_cookies"},
-            {name: "Lumberjack", pricing: "40.00", image: "lumberjack"}]
-        .row 
-            -menu_photos.each do |photo|
-                .col-md-4.col-lg-3.col-sm-6.col-xs-12.food{style:"background-image:url(/images/drinks/#{photo[:image]}.png)"}
-                    .screen
-                        .row.middle-xs.full-height  
-                            .col-xs-12
-                                %h3.dancing-script.text-white.subtitle= photo[:name]
-                                %p.m-0.text-white= photo[:pricing] + "USD  "
-    #gallery
-        .inner
-            -gallery_images.each do |image|
-                .image{style:"background-image:url(/images/drinks/#{image}.jpg);"}
-    .container 
-        .card.bg-white.text-black.text-center.relative
-            %h3.text-2xl.font-extralight
-                En 
-                %strong.dancing-script.text-2xl El Rincón del Café
-                disfrutaras de momentos llenos de aromas y delicias en un ambiente perfecto para 
-                %strong.dancing-script.text-2xl relajarte y compartir.
-            %p.mt-2
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Dolorum magnam hic at! Veniam, aut aliquid officia atque, ratione ab 
-                facilis quo neque minus adipisci voluptates saepe accusamus ipsum, 
-                error recusandae. Veniam, aut aliquid officia atque, ratione ab 
-                facilis quo neque minus minusminus minu adipisci voluptates saepe accusamus ipsum, 
-                error recusandae.
-                %strong.dancing-script.text-2xl Chef -AVS
-    .bg-black.text-white.full-height#contact 
-        .row.middle-xs.full-height
+        ="<!--[if lt IE 9]>"
+        %p{class:"browserupgrade"}
+        Estás usando un navegador
+        %strong desactualizado.
+        Por favor
+        %a{href:"http://browsehappy.com/"}
+        actualiza tu navegador
+        para una mejor experiencia
+        ="<![endif]-->"
+        .video-container
+            %video{autoplay:true, loop:true,width:"1280",height:"720",poster:"/videos/images/coffee.jpg"} 
+                %source{src:"/videos/mp4/coffe.mp4",typ:"video/mp4"}
+                %source{src:"/videos/webm/coffe.webm",typ:"video/webm"}
+        .row.full-height.middle-xs.center-xs.relative.up#home
             .col-xs-12
-                .box
-                    %form{action:"https://formspree.io/f/mzbleyvg",method:"POST"}
-                        .row.center-xs 
-                            .col-xs-2.col-md-1 
-                                .box 
-                            .col-xs-5
-                                .box 
-                                    %input{type:"email",name:"email",placeholder:"Escribe tu correo electronico"}
-                                    %input{type:"text",name:"name",placeholder:"Escribe tu nombre"}
-                                    %textarea{name:"body",placeholder:"Escribe tu mensaje..."}
-                                    %div
-                                        %button{type:"submit",class:'btn btn-primary'}
-                                            Enviar
+                .box 
+                    %img{src:"images/logo.png", width:200}
+                    %h1.text-white.dancing-script.title.m-0 El Rincón del café
+                    %p#is-open.text-white
+                        %svg{xmlns: "http://www.w3.org/2000/svg", width: "16", height: "16", fill: "currentColor", class: "bi bi-clock", viewBox: "0 0 16 16"}
+                            %path{d: "M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"}
+                            %path{d: "M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"}
+                        Abierto Ahora
+            %nav.fixed#navigation.text-white.top.right.navigation
+                -menu = ["Inicio","Menú","Galería","Contacto","Como llegar"]
+                %ul.list-inline
+                    -menu.each do |item|
+                        %li 
+                            %a{}=item
+            .absolute#description.bg-black.large-padding.text-white.w-full
+                .row.middle-xs.center-xs
+                    .col-xs-7.col-sm-6.text-white.text-2xl
+                        ¡Descubre un mundo de sabores! Te esperamos en nuestra cafetería.
+                    .col-xs#sticky-navigation
+                        .box 
+                            %nav.text-right.navigation
+                                %ul.list-inline
+                                    -menu.each do |item|
+                                        %li 
+                                            %a{}=item
+        .text-center.relative#menu
+            .absolute.bg-white#menu-title 
+                %h2.dancing-script.title Menú
+            -menu_photos = [{name: "Americano", pricing: "10.00", image: "americano"},
+                {name: "Bagel Cream Cheese", pricing: "20.00", image: "bagel_cream_cheeese"},
+                {name: "Bluberry Muffin", pricing: "15.00", image: "bluberry_muffin"},
+                {name: "Cappuccino", pricing: "12.00", image: "cappuccino"},
+                {name: "Caramel espresso", pricing: "30.00", image: "caramel_espresso"},
+                {name: "Grilled Cheese", pricing: "30.00", image: "grilled_cheese"},
+                {name: "Kids Cookies", pricing: "18.00", image: "kids_cookies"},
+                {name: "Lumberjack", pricing: "40.00", image: "lumberjack"}]
+            .row 
+                -menu_photos.each do |photo|
+                    .col-md-4.col-lg-3.col-sm-6.col-xs-12.food{style:"background-image:url(/images/drinks/#{photo[:image]}.png)"}
+                        .screen
+                            .row.middle-xs.full-height  
+                                .col-xs-12
+                                    %h3.dancing-script.text-white.subtitle= photo[:name]
+                                    %p.m-0.text-white= photo[:pricing] + "USD  "
+        #gallery
+            .inner
+                -gallery_images.each do |image|
+                    .image{style:"background-image:url(/images/drinks/#{image}.jpg);"}
+        .container 
+            .card.bg-white.text-black.text-center.relative
+                %h3.text-2xl.font-extralight
+                    En 
+                    %strong.dancing-script.text-2xl El Rincón del Café
+                    disfrutaras de momentos llenos de aromas y delicias en un ambiente perfecto para 
+                    %strong.dancing-script.text-2xl relajarte y compartir.
+                %p.mt-2
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Dolorum magnam hic at! Veniam, aut aliquid officia atque, ratione ab 
+                    facilis quo neque minus adipisci voluptates saepe accusamus ipsum, 
+                    error recusandae. Veniam, aut aliquid officia atque, ratione ab 
+                    facilis quo neque minus minusminus minu adipisci voluptates saepe accusamus ipsum, 
+                    error recusandae.
+                    %strong.dancing-script.text-2xl Chef -AVS
+        .bg-black.text-white.full-height#contact 
+            .row.middle-xs.full-height
+                .col-xs-12
+                    .box
+                        %p#info-contacto.text-center.text-white.text-2xl Ponte en contacto con nosotros llena los campos correspodientes y envianos un correo
+                        %form#form-contact.step-form{action:"https://formspree.io/f/mzbleyvg",method:"POST"}
+                            .row.center-xs 
+                                .col-xs-2.col-md-1 
+                                    .box.text-right.text-center 
+                                        -3.times do |i|
+                                            %div{class: i == 0 ? "path-step active" : "path-step"}
+                                            %br
+                                .col-xs-5
+                                    .box
+                                        %fieldset.step.active
+                                            %input{class: "input",type:"email",name:"email",placeholder:"Escribe tu correo electronico", required: true}
+                                        %fieldset.step
+                                            %input{class: "input",type:"text",name:"name",placeholder:"Escribe tu nombre", required: true}
+                                        %fieldset.step
+                                            %textarea{class: "input",name:"body",placeholder:"Escribe tu mensaje...", required: true}
+                                        %p#form-status
 
-                    
+                        
 
 
-    %script{src:"https://code.jquery.com/jquery-3.7.0.js", integrity:"sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=", crossorigin:"anonymous"}
-        window.jQuery || document.write("<script src='js\vendor\jquery-3.7.0.min.js'><\/script>")
-    %script{src:"js/main.js"}
+        %script{src:"https://code.jquery.com/jquery-3.7.0.js", integrity:"sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=", crossorigin:"anonymous"}
+            window.jQuery || document.write("<script src='js\vendor\jquery-3.7.0.min.js'><\/script>")
+        %script{src:"js/main.js"}
+        %script{src:"js/step.js"}
     
     
